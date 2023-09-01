@@ -21,7 +21,7 @@ import jakarta.annotation.security.PermitAll;
 public class PaymentController {
 
 	@Autowired
-	PaymentService paymentService;
+	private PaymentService paymentService;
 
 	@GetMapping("/")
 	public String getGreeting() {
